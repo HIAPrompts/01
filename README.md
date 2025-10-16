@@ -1,3 +1,15 @@
+---
+title: Agente Humanizado com Mistral + LangChain
+emoji: 🤖
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: "4.0.0"
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # 🤖 Agente Humanizado com Mistral + LangChain
 
 Um agente conversacional inteligente que combina análise de sentimento, metáforas criativas e interjeições naturais para criar uma experiência de conversa mais humana e empática.
