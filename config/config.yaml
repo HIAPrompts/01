@@ -1,5 +1,5 @@
 mistral:
-  api_key: "O5YoGOB4vYn2XikYfbb99DeDBlDgwVAA"
+  api_key: "${MISTRAL_API_KEY:O5YoGOB4vYn2XikYfbb99DeDBlDgwVAA}"
   model: "mistral-large-latest"
   temperature: 0.7
   max_tokens: 1024

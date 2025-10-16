@@ -1,19 +1,10 @@
 import gradio as gr
 import yaml
-import os
-from dotenv import load_dotenv
 from src.agent.agent import HumanizedAgent
-
-# Carregar variáveis de ambiente
-load_dotenv()
 
 # Carregar configuração
 with open("config/config.yaml", "r") as f:
     config = yaml.safe_load(f)
-
-# Usar variáveis de ambiente se disponíveis
-if "MISTRAL_API_KEY" in os.environ:
-    config["mistral"]["api_key"] = os.environ["MISTRAL_API_KEY"]
 
 # Inicializar o agente
 agente = HumanizedAgent(config)
