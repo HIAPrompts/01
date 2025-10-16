@@ -44,4 +44,4 @@ iface = gr.Interface(
 if __name__ == "__main__":
     print("Iniciando interface web...")
     print("Acesse: http://localhost:7860")
-    iface.launch(share=False, server_name="0.0.0.0", server_port=7860)
+    iface.launch()
