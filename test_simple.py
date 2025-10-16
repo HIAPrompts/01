@@ -27,7 +27,13 @@ def test_agent():
         
         resposta = agente.responder("oi")
         print(f"Usuario: oi")
-        print(f"Agente: {resposta}")
+        # Tratar encoding para Windows
+        try:
+            print(f"Agente: {resposta}")
+        except UnicodeEncodeError:
+            # Remover caracteres problemáticos
+            resposta_clean = resposta.encode('ascii', 'ignore').decode('ascii')
+            print(f"Agente: {resposta_clean}")
         
         print("\nTeste concluido com sucesso!")
         
